@@ -1,0 +1,107 @@
+{
+  "1000011": {
+    "AccoutType": "Savings",
+    "accountBalance": 0
+  },
+  "1000021": {
+    "AccoutType": "Savings",
+    "accountBalance": 0
+  },
+  "1000022": {
+    "AccoutType": "Chequing",
+    "accountBalance": 0
+  },
+  "1000031": {
+    "AccoutType": "Chequing",
+    "accountBalance": 0
+  },
+  "1000032": {
+    "AccoutType": "Chequing",
+    "accountBalance": 0
+  },
+  "1000041": {
+    "AccoutType": "Chequing",
+    "accountBalance": 0
+  },
+  "1000042": {
+    "AccoutType": "Chequing",
+    "accountBalance": 0
+  },
+  "1000051": {
+    "accountType": "Chequing",
+    "accountBalance": 200
+  },
+  "1000052": {
+    "AccoutType": "Chequing",
+    "accountBalance": 0
+  },
+  "1000062": {
+    "accountType": "Chequing",
+    "accountBalance": 200
+  },
+  "1000063": {
+    "AccoutType": "Savings",
+    "accountBalance": 0
+  },
+  "1000064": {
+    "AccoutType": "Chequing",
+    "accountBalance": 0
+  },
+  "1000065": {
+    "AccoutType": "Savings",
+    "accountBalance": 0
+  },
+  "1000066": {
+    "AccoutType": "Savings",
+    "accountBalance": 0
+  },
+  "1000067": {
+    "AccoutType": "Savings",
+    "accountBalance": 0
+  },
+  "1000068": {
+    "AccoutType": "Savings",
+    "accountBalance": 0
+  },
+  "1000069": {
+    "AccoutType": "Savings",
+    "accountBalance": 0
+  },
+  "1000070": {
+    "AccoutType": "Savings",
+    "accountBalance": 0
+  },
+  "1000071": {
+    "AccoutType": "Savings",
+    "accountBalance": 0
+  },
+  "1000072": {
+    "AccoutType": "Savings",
+    "accountBalance": 0
+  },
+  "1000073": {
+    "AccoutType": "Chequing",
+    "accountBalance": 0
+  },
+  "1000074": {
+    "AccoutType": "Chequing",
+    "accountBalance": 0
+  },
+  "1000075": {
+    "accountType": "Savings",
+    "accountBalance": 200
+  },
+  "1000076": {
+    "AccoutType": "Chequing",
+    "accountBalance": 0
+  },
+  "1000077": {
+    "AccoutType": "Savings",
+    "accountBalance": 0
+  },
+  "1000078": {
+    "AccoutType": "Chequing",
+    "accountBalance": 0
+  },
+  "lastID": 1000078
+}

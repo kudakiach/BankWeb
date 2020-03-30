@@ -1,0 +1,384 @@
+body {
+    padding: 50px;
+    font: 24px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #aaaaaa;
+}
+
+h1 {
+    font-size: 54px;
+}
+
+.center {
+    text-align: center;
+}
+
+.login-box {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+.login-form input {
+    border: 4px solid rgba(186, 37, 0, 0.842);
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.error {
+    color: rgb(255, 0, 0);
+    font-size: 22px;
+}
+
+.logout {
+    display: none;
+    margin-right: -110px;
+}
+
+.profile {
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    z-index: -9999999;
+}
+
+.profile:hover~.logout {
+    display: block;
+    position: absolute;
+    top: 122px;
+    right: 825px;
+    z-index: 999999999;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 20px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+/*	General	*/
+
+* {
+    font-family: calibri, arial, "times new roman";
+    margin: 0;
+    padding: 0;
+}
+
+article.clscontainer {
+    background-color: #8a9999;
+    border: 20px solid rgb(25, 190, 25);
+    border-radius: 15px;
+    box-shadow: #25a730 0px 25px 15px -15px;
+    padding: 50px;
+    left: 0;
+    margin: 0 auto;
+    padding-top: 20px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 80px;
+    width: 450px;
+}
+
+body {}
+
+button {
+    background-color: transparent;
+    border: 5px solid #bfeeee;
+    border-radius: 5px;
+    font-size: 1.2em;
+    width: 200px;
+}
+
+button:disabled {
+    background-color: #aaaaaa;
+    color: #555555;
+}
+
+button:hover {
+    background-color: #00ff00;
+    color: #ffffff;
+}
+
+button.clssubmit {
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+}
+
+form.clsForm {
+    border: 0px solid #ff00ff;
+    height: 600px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 1200px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #3423aa;
+    text-align: center;
+}
+
+h1.clsHeaderPartial {
+    color: rgba(191, 238, 238, 0.5);
+    border-bottom: 1px solid #bfeeee;
+    font: 2.5em calibri, arial;
+    font-weight: 900;
+    min-height: 50px;
+}
+
+input.clsAccountNumber {
+    background-color: transparent;
+    border: 0px solid #bfeeee;
+    color: #bfeeee;
+    font: bold 2.1em calibri, arial;
+    width: 120px;
+}
+
+input[type="email"] {
+    margin-bottom: 5px;
+    width: 300px;
+}
+
+#lblmessage {
+    background-color: #bfeeee;
+    bottom: 60px;
+    color: #ff0000;
+    display: inline-block;
+    font: 1.2em calibri;
+    font-weight: 900;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 300px;
+}
+
+
+/*	bankBalance.hbs	*/
+
+p.clsbalance {
+    color: #bfeeee;
+    font: bold 2.0em calibri, arial;
+}
+
+
+/*	bankDeposit.hbs	*/
+
+
+/*	bankLanding.hbs	*/
+
+.deepshadow {
+    color: #72f308;
+    font-size: 8em;
+    background-color: #8a9999;
+    letter-spacing: .1em;
+    text-shadow: 0 -1px 0 #59e408, 0 1px 0 #adda0e, 0 2px 0 #09bd63, 0 3px 0 #09bc7a, 0 4px 0 #69a9a9, 0 5px 0 #09b969, 0 6px 0 #68a7a7, 0 7px 0 #679999, 0 8px 0 #202020, 0 9px 0 #121212, 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.clsmenu {
+    border: 0px solid #22bfee;
+    color: #5da519;
+    height: 200px;
+    margin: 0 auto;
+    padding: 1vh;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    top: 50px;
+    width: 180px;
+    padding-right: 20px;
+}
+
+#txtid {
+    font: 1.2em courier;
+    margin: 0 10px;
+    ;
+    width: 180px;
+}
+
+input[type="radio"] {
+    margin: 0 5px;
+    width: 30px;
+}
+
+.clsUsernameLogout {
+    border: 0px solid #ff0000;
+    height: 20px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+    width: 200px;
+    margin-right: 20px;
+}
+
+div#divUsername {
+    border: 0px solid #00ff00;
+    color: rgb(123, 155, 155);
+    right: 0;
+    opacity: 1;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    transition: opacity 1s ease-out;
+}
+
+div#divLogout {
+    right: 0;
+    position: absolute;
+    top: 0;
+}
+
+a#aLogout {
+    color: rgb(0, 0, 199);
+    opacity: 0;
+    text-decoration: underline;
+    transition: opacity 1s ease-in;
+}
+
+.clsUsernameLogout:hover div#divUsername {
+    opacity: 0;
+}
+
+.clsUsernameLogout:hover a#aLogout {
+    opacity: 1;
+}
+
+
+/*	bankLogin.hbs	*/
+
+#frmBankLogin input[type="text"],
+#frmBankLogin input[type="password"],
+#frmBankLogin button,
+#frmBankLogin a {
+    height: 50px;
+    width: 400px;
+}
+
+a#aRegister {
+    background-color: #9bbbbb;
+    border: 0px solid #bfeeee;
+    color: #ffffff;
+    display: inline-block;
+    font: 1.5em calibri;
+    height: 30px;
+    margin-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 400px;
+}
+
+
+/*	bankOpenAccount.hbs	*/
+
+.clsaccounttype {
+    color: #bfeeee;
+    font: bold 2.0em calibri, arial;
+}
+
+.clsrdoaccounttype {
+    background-color: #ffffff;
+    height: 20px;
+}
+
+img {
+    height: 360px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    width: 360px;
+}
+
+select {
+    border: 1px solid #bfeeee;
+    background-color: #bfeeee;
+    color: #7b9b9b;
+    float: right;
+    height: 1.5em;
+    margin: 0;
+    width: 200px;
+}
+
+input[type="email"]:invalid {
+    color: #f00;
+}
+
+
+/*	bankRegister.hbs	*/
+
+#frmBankRegister input[type="email"],
+#frmBankRegister input[type="password"] {
+    font: bold 2.0em calibri, arial;
+    height: 50px;
+    width: 400px;
+}
+
+button#btnRegister {
+    font: bold 2.0em calibri, arial;
+    height: 50px;
+    width: 400px;
+}
+
+
+/*	Styling Rules: login	*/
+
+div.clslogincontent {
+    border: 3px double #bfeeee;
+    border-radius: 5px;
+    height: 180px;
+    left: 0;
+    margin: 0 auto;
+    padding: 6px 3px 6px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 50px;
+    width: 360px;
+}
+
+
+/*	Styling Rules: register	*/
+
+div.clsregistercontent {
+    border: 3px double #bfeeee;
+    border-radius: 2%;
+    margin: 3vh auto;
+    padding: 2vh 1vh 5vh;
+    text-align: center;
+    top: 10vh;
+    width: 360px;
+}

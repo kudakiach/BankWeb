@@ -1,0 +1,30 @@
+
+
+	
+
+		<article class="clscontainer">
+            <h4>Account Number:<span style="color:black">{{accountNumber}}</span></h4>
+            <h4>Account Type:<span style="color:black">{{accountType}}</span></h4>
+            <h2>Account Balance:<span style="color:black">{{balance}}</span></h2>
+		
+       
+				
+			
+			
+		<form action="/return" method="post" class="mt-5">
+			<button class="btn btn-danger" type="submit" >Cancel</button>
+		</form>
+		</article>
+        
+
+		<aside class="clsUsernameLogout">
+			<div id="divUsername">Logged In As:<span style="color:aquamarine">{{username}}</span> </div>
+			<form action="/logout">
+			<div id="divLogout"><a id="aLogout" href="/logout" type="submit">Logout</a></div>
+			</form>
+		</aside>
+        
+	<label class="text-center" id="lblmessage">{{msg}}</label>
+		<br>
+
+

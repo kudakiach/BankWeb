@@ -1,0 +1,49 @@
+
+
+	
+	<form class="clsform" id="frmBankLanding" method="post" action="/bank">
+	
+	<article class="clscontainer">
+			<h6 class="deepshadow">WEB<br>BANK</h6>
+		</article>
+		
+		<br>
+	
+		<nav class="clsmenu">
+			
+			<h3>Menu</h3>
+			<br>
+			
+			<select name="accountNumber" class="form-control">
+				<option ><-- Choose Account --></option>
+				<option value="{{savings}}">Savings -- {{savings}}</option>
+				<option value="{{chequing}}"> Chequing -- {{chequing}}</option>
+			</select>
+
+			<input id="rdobalance" name="banking" type="radio" value="balance">
+			<label for="rdobalance">Balance</label><br>
+			<input id="rdodeposit" name="banking" type="radio" value="deposit">
+			<label for="rdodeposit">Deposit</label><br>
+			<input id="rdoopenaccount" name="banking" type="radio" value="openaccount" checked>
+			<label for="rdoopenaccount">Open an Account</label><br>
+			<input id="rdowithdrawal" name="banking" type="radio" value="withdrawal">
+			<label for="rdowithdrawal">Withdrawal</label>
+
+		</nav>
+		<button class="clssubmit" type="submit">Submit</button>
+		
+	</form>
+
+		<aside class="clsUsernameLogout">
+			<div id="divUsername">Logged In As:<span style="color:aquamarine">{{username}}</span> </div>
+			<form action="/logout">
+			<div id="divLogout"><a id="aLogout" href="/logout" type="submit">Logout</a></div>
+			</form>
+		</aside>
+		
+		
+		<label id="lblmessage">{{msg}}</label>
+		<br>
+		
+		
+		

@@ -1,0 +1,38 @@
+
+
+	<form class="" id="" method="post" action="/depositAmount">
+
+		<article class="clscontainer">
+			 <h4>Account Number:{{accountNumber}}</h4>
+				<div class="form-group">
+					<label for="rdobalance">Deposit Amount</label><br>
+				<input id="withdraw" class="form-control" name="amount" type="number" required>	
+				</div>
+				
+				<input id="account" name="accountNumber" type="hidden" value="{{accountNumber}}" >
+				<input id="account" name="accountType" type="hidden" value="{{accountType}}">
+				<input id="account" name="accountBalance" type="hidden" value="{{accountBalance}}">
+				<button class="btn btn-success" type="submit">Deposit</button><br><br>
+				
+			
+			</form>
+		<form action="/return" method="post" class="mt-3">
+			<button class="btn btn-danger" type="submit" >Cancel</button>
+		</form>
+		
+		</article>
+        
+
+		<aside class="clsUsernameLogout">
+			<div id="divUsername">Logged In As:<span style="color:aquamarine">{{username}}</span> </div>
+			<form action="/logout">
+			<div id="divLogout"><a id="aLogout" href="/logout" type="submit">Logout</a></div>
+			</form>
+		</aside>
+
+		
+		<label id="lblmessage">{{msg}}</label>
+		<br>
+		
+
+	

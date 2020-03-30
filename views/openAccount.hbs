@@ -1,0 +1,40 @@
+
+
+	<form class="clsform" id="frmBankLanding" method="post" action="/createAccount">
+
+		<article class="clscontainer">
+           
+			<input id="rdobalance" name="accountType" type="radio" value="Chequing">
+			<label for="rdobalance">Chequing</label><br>
+			<input id="rdodeposit" name="accountType" type="radio" value="Savings">
+            <input type="hidden" name="accountBalance" value="0">
+			<label for="rdodeposit">Savings</label><br>
+		<input class=" btn btn-success" type="submit" value="create account" disabled>
+        </form>
+		<form action="/return" method="post" class="mt-5">
+			<button class="btn btn-danger" type="submit" >Cancel</button>
+		</form>
+		</article>
+        
+
+		<aside class="clsUsernameLogout">
+			<div id="divUsername">Logged In As:<span style="color:aquamarine">{{username}}</span> </div>
+			<form action="/logout">
+			<div id="divLogout"><a id="aLogout" href="/logout" type="submit">Logout</a></div>
+			</form>
+		</aside>
+
+		
+		
+
+	
+
+<script>
+	$(function(){
+    $("input[type='radio']").change(function(){
+
+        $("input[type='submit']").prop("disabled", false);
+       
+    });
+});
+</script>

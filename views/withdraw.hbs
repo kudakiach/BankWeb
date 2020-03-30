@@ -1,0 +1,36 @@
+
+
+
+
+	<form class="clsform" id="frmBankLanding" method="post" action="/withdrawAmount">
+
+		<article class="clscontainer">
+            <h4>Account Number:{{accountNumber}}</h4>
+			<label for="rdobalance">Withdraw Amount</label><br>
+			<input id="withdraw" class="form-control" name="amount" type="number" placeholder="Withdraw amount">
+			<input id="account" name="accountNumber" type="hidden" value="{{accountNumber}}">
+			<input id="account" name="accountType" type="hidden" value="{{accountType}}">
+			<input id="account" name="accountBalance" type="hidden" value="{{accountBalance}}">
+			<button class="btn btn-success mt-3" type="submit">Withdraw</button><br><br>
+			</form>
+		<form action="/return" method="post" class="mt-3">
+			<button class="btn btn-danger" type="submit" >Cancel</button>
+		</form>
+        
+		</article>
+        
+
+		<aside class="clsUsernameLogout">
+			<div id="divUsername">Logged In As:<span style="color:aquamarine">{{username}}</span> </div>
+			<form action="/logout">
+			<div id="divLogout"><a id="aLogout" href="/logout" type="submit">Logout</a></div>
+			</form>
+		</aside>
+
+		<br>
+		
+
+	
+
+<label class="text-center" id="lblmessage">{{msg}} </label>
+		<br>

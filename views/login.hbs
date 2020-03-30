@@ -1,0 +1,27 @@
+<head>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <div class="center">
+        <h1>WEB BANK</h1>
+        <p>LOGIN TO GET TO WEB BANK</p>
+
+        <div class="login-box shadow">
+            <form action="/" method='post' class='login-form'>
+
+                <i id='username-input-icon' class='icon-user'></i>
+                <input id="username" autocomplete="off" placeholder="Username" class='form-control' type="text" name="username">
+                   <br/> 
+                <i id='password-input-icon' class='icon-lock'></i>
+                <input id="password" autocomplete="off" placeholder="Password" class='form-control' type="password"
+                    name="password">
+                    <br/>
+                <input type="submit" class='btn btn-success btn-block' value="CLICK HERE TO ENTER">
+
+            </form>
+
+        </div>
+        <label class="error">{{errors}}</label>
+    </div>
+</body>

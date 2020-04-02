@@ -9,10 +9,10 @@ const path = require('path');
 var events = require('events');
 var mongoose = require('mongoose')
 const flash = require('connect-flash')
-mongoose.connect('mongodb+srv://root:abcd1234@myapp-prthu.mongodb.net/assignment_03?retryWrites=true&w=majority', { useNewUrlParser: true }, (err) => {
+mongoose.connect('mongodb+srv://mickeyvalour:abcd1234@mickeyvalour-nh28a.mongodb.net/miketeggart?retryWrites=true&w=majority', { useNewUrlParser: true }, (err) => {
     if (!err) {
         console.log('mongodb connected')
-    } else { console.log(' connection error') }
+    } else { console.log(err + ' connection error') }
 })
 
 var accountSchema = new mongoose.Schema({
@@ -29,16 +29,17 @@ var accountSchema = new mongoose.Schema({
         required: 'This field is required'
     }
 })
-accountModel = mongoose.model('accounts', accountSchema);
+accountModel = mongoose.model('webBanks', accountSchema);
 
 router.get('/dashboard', requireLogin, (req, res) => {
     var user = req.session.user.username
     accountModel.findOne({ Username: user }, function(err, docs) {
         if (err) {
-            console.log("error")
+            redirect('/')
         }
         console.log(docs)
         res.render('index', { msg: req.flash('msg'), title: 'WEB BANK', username: req.session.user.username, savings: docs.Savings, chequing: docs.Chequing });
+        //, savings: docs.Savings, chequing: docs.Chequing 
     })
 
 

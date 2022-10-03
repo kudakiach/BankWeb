@@ -9,11 +9,13 @@ const path = require('path');
 var events = require('events');
 var mongoose = require('mongoose')
 const flash = require('connect-flash')
-mongoose.connect('mongodb+srv://mickeyvalour:abcd1234@mickeyvalour-nh28a.mongodb.net/miketeggart?retryWrites=true&w=majority', { useNewUrlParser: true }, (err) => {
-    if (!err) {
-        console.log('mongodb connected')
-    } else { console.log(err + ' connection error') }
-})
+mongoose.connect(
+    'mongodb://127.0.0.1:27017/QAS',
+    (err) => {
+     if(err) console.log(err) 
+     else console.log("mongdb is connected");
+    }
+  );
 
 var accountSchema = new mongoose.Schema({
     username: {
